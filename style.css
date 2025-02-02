@@ -68,3 +68,42 @@ img.appendix {
     margin-top: 5%;
     margin-bottom: 1%;
 }
+
+summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  /* Стили для summary */
+  summary {
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+  }
+
+  summary::before {
+    content: "\25B6";
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+  }
+  
+  details[open] summary::before {
+    transform: translateY(-50%) rotate(90deg);
+  }
+  
+  summary {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  .content {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
