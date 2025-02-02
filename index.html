@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Переключатель языка</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div draggable="false">
+        <img onclick="switchLanguage('ru')" class="flag" src="images/ru_flag.svg">
+        <img onclick="switchLanguage('en')" class="flag" src="images/us_flag.svg">
+    </div>
+
+    <div id="en" class="language">
+        <h1>Welcome to our website</h1>
+        <p>This page contains multiple languages.</p>
+    </div>
+
+    <div id="ru" class="language active">
+        <h1>Установка Python на разных системах</h1>
+        <hr>
+        <h2>Windows</h2>
+        <div class="construct">
+            <p>Для установки Python на системе Windows нужно просто перейти на <a href="https://www.python.org/downloads/windows/">официальный сайт на страницу загрузок</a></p>
+
+            <img class="appendix" src="images/windows1.png">
+            <p>Скачиваем последнюю версию (Или ту, которая приглянулась)</p>
+
+            <img class="appendix" src="images/windows2.png">
+            <p>Запускаем файл и <b>обязательно</b> нажимаем на <code>Add python.exe to PATH</code></p>
+
+            <img class="appendix" src="images/windows3.png">
+            <p>Нажимаем <code>Install now</code></p>
+
+            <img class="appendix" src="images/windows4.png">
+            <p>Ждём установки</p>
+
+            <img class="appendix" src="images/windows5.png">
+            <p>После завершения установки закрываем программу инсталляции</p>
+
+            <p>Перезагружаем компьютер</p>
+
+            <p>Проверяем, скачан ли Python</p>
+            
+            <img class="appendix" src="images/windows6.png">
+            <p>Нажимаем на клавиатуре сочетание клавиш <code>win+r</code></p>
+
+            <img class="appendix" src="images/windows7.png">
+            <p>Вводим в поле ввода <code>powershell</code></p>
+            
+            <img class="appendix" src="images/windows8.png">
+            <p>Нажимаем клавишу <code>Enter</code></p>
+
+            <img class="appendix" src="images/windows9.png">
+            <p>Пишем в поле ввода <code>python --version</code> (команда для проверки версии Python)</p>
+
+            <img class="appendix" src="images/windows10.png">
+            <p>Нажимаем <code>Enter</code></p>
+
+            <p>Если у Вас вывелась версия и никаких ошибок нет, то поздравляю! Вы успешно установили Python!</p>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
